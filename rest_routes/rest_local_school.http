@@ -1,0 +1,78 @@
+
+
+
+
+
+
+### View Schools (GET Page) ###
+GET  http://localhost:5000/api/basics
+content-type: application/json
+
+
+### Retrive all Session Information (GET Page) ###
+GET  http://localhost:5000/api/basics/schools
+content-type: application/json
+
+
+### Create a Session Object (POST Page) ###
+POST http://localhost:5000/api/basics/schools
+content-type: application/json
+
+{    
+    "id": 1,
+    "name": "Manikchak High Madrasah(H.S)",
+    "dise": "19071515802",
+    "grade": "Higher Secondary",      
+   
+    "schedule_time": "10:30am to 4:30pm",
+    
+    "vill": "Manikchak",
+    "post": "Manikchak",
+    "ps": "Lalgola",
+    "dist": "Murshidabad",
+    "pin": "742148",
+
+    "email": "manikchakhm1921@gmail.com",
+    "mobile": ["9801025012"],
+    "imgurl": ["https://www.shutterstock.com/image-vector/school-green-lawn-icon-flat-260nw-1935114662.jpg"],
+    
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+PUT http://localhost:5000/api/basics/schools
+content-type: application/json
+
+{
+    "_id": "64298cf00a0750ab7a2ad6d4",   
+    "id": 1,
+    "name": "Manikchak High Madrasah(H.S)dddd",
+    "dise": "19071515802",
+    "grade": "Higher Secondary",      
+   
+    "schedule_time": "10:30am to 4:30pm",
+    
+    "vill": "Manikchak",
+    "post": "Manikchak",
+    "ps": "Lalgola",
+    "dist": "Murshidabad",
+    "pin": "742148",
+
+    "email": "manikchakhm1921@gmail.com",
+    "mobile": ["9801025012"],
+    "imgurl": ["https://www.shutterstock.com/image-vector/school-green-lawn-icon-flat-260nw-1935114662.jpg"],
+    
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+DELETE http://localhost:5000/api/basics/schools
+content-type: application/json
+
+{
+    "_id": "64298cf00a0750ab7a2ad6d4"
+}

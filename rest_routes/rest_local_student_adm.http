@@ -1,0 +1,84 @@
+
+
+
+
+
+
+### View Schools (GET Page) ###
+GET  http://localhost:5000/api/student
+content-type: application/json
+
+
+### Retrive all Session Information (GET Page) ###
+GET  http://localhost:5000/api/student/admissions
+content-type: application/json
+
+
+### Create a Session Object (POST Page) ###
+POST http://localhost:5000/api/student/admissions
+content-type: application/json
+
+{    
+    "id": 1,
+    "sessionId": "6429adaa2cde0ae95b2af281",
+    "name": "Ayantika Das",
+    "fatherName": "Hari Narayan Das",
+    "registrationNo": "2315241256230",
+    "registrationDate": "2021-03-26",
+    "registrationYear": "2021-2023",
+
+    "gender": "Female",
+    "dob": "2011-06-27",
+
+    "admClassId": "6429adaa2cde0ae95b2af281",
+    "admSubjectIds": ["6429adaa2cde0ae95b2af281","6429adaa2cde0ae95b2af281"],
+
+    "admDate": "521",
+    "admSlNo": "2023-04-25",
+
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+PUT http://localhost:5000/api/student/admissions
+content-type: application/json
+
+{
+    "id": 1,
+    "_id": "6429d784fdb07cb3421dee06",
+    "sessionId": "6429adaa2cde0ae95b2af281",
+    "name": "Ayantika Das",
+    "fatherName": "Hari Narayan Das vvvvv",
+    "registrationNo": "2315241256230",
+    "registrationDate": "2021-03-26",
+    "registrationYear": "2021-2023",
+
+    "gender": "Female",
+    "dob": "2011-06-27",
+
+    "admClassId": "6429adaa2cde0ae95b2af281",
+    "admSubjectIds": ["6429adaa2cde0ae95b2af281","6429adaa2cde0ae95b2af281"],
+
+    "admDate": "521",
+    "admSlNo": "2023-04-25",
+
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+DELETE http://localhost:5000/api/student/admissions
+content-type: application/json
+
+{
+    "_id": "642a5c557dcebed449cf43ab"
+}
+
+
+
+
+
+

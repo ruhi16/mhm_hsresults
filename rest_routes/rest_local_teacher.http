@@ -1,0 +1,89 @@
+
+
+
+
+
+
+### View Schools (GET Page) ###
+GET  http://localhost:5000/api/basics
+content-type: application/json
+
+
+### Retrive all Session Information (GET Page) ###
+GET  http://localhost:5000/api/basics/teachers
+content-type: application/json
+
+
+### Create a Session Object (POST Page) ###
+POST http://localhost:5000/api/basics/teachers
+content-type: application/json
+
+{    
+    "id": 1,
+    "name": "Hari Narayan Das",
+    "fatherName": "Pradip Kumar Das",
+    
+    "vill": "Begamganj Road",
+    "post": "Jiaganj",
+    "ps": "Jiaganj",
+    "dist": "Murshidabad",
+    "pin": "742123",
+
+    "email": "hndas15@gmail.com",
+    "mobile": ["9153122277"],
+    "imgurl": ["https://media.licdn.com/dms/image/C4E03AQFSVmsac5HO1A/profile-displayphoto-shrink_800_800/0/1516697862110?e=2147483647&v=beta&t=d9AZl5AKD7zVcezFBP1cTsB7MZMj7LQELCNRqRvxrHw"],
+    
+    "dob": "1980-01-02",
+    "doj": "2010-08-20",
+    "dor": "2040-01-31",
+
+
+    "subject_main": "64298d680a0750ab7a2ad6da",
+    "subject_others": ["64298d680a0750ab7a2ad6da", "64298d680a0750ab7a2ad6da"],
+
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+PUT http://localhost:5000/api/basics/teachers
+content-type: application/json
+
+{
+    "_id": "6429adaa2cde0ae95b2af281",   
+    "id": 1,
+    "name": "Hari Narayan Das and new",
+    "fatherName": "Pradip Kumar Das",
+    
+    "vill": "Begamganj Road",
+    "post": "Jiaganj",
+    "ps": "Jiaganj",
+    "dist": "Murshidabad",
+    "pin": "742123",
+
+    "email": "hndas15@gmail.com",
+    "mobile": ["9153122277"],
+    "imgurl": ["https://media.licdn.com/dms/image/C4E03AQFSVmsac5HO1A/profile-displayphoto-shrink_800_800/0/1516697862110?e=2147483647&v=beta&t=d9AZl5AKD7zVcezFBP1cTsB7MZMj7LQELCNRqRvxrHw"],
+    
+
+    "dob": "1980-01-02",
+    "doj": "2010-08-20",
+    "dor": "2040-01-31",
+
+    "subject_main": "64298d680a0750ab7a2ad6da",
+    "subject_others": ["64298d680a0750ab7a2ad6da", "64298d680a0750ab7a2ad6da"],
+
+
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+DELETE http://localhost:5000/api/basics/teachers
+content-type: application/json
+
+{
+    "_id": "6429adaa2cde0ae95b2af281"
+}

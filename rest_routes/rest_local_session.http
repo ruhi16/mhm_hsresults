@@ -1,0 +1,58 @@
+
+
+
+
+
+
+### Register an user (POST Page) ###
+GET  http://localhost:5000/api/basics
+content-type: application/json
+
+
+### Register an user (POST Page) ###
+GET  http://localhost:5000/api/basics/session
+content-type: application/json
+
+
+
+### Retrive all Session Information (GET Page) ###
+GET  http://localhost:5000/api/basics/session
+content-type: application/json
+
+
+### Create a Session Object (POST Page) ###
+POST http://localhost:5000/api/basics/session
+content-type: application/json
+
+{
+    "id": 1,
+    "session_name":  "2022-2023",
+    "session_description":  "For HS Section",
+    "start_date": "2023-05-01",
+    "end_date": "2022-04-30",    
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+PUT http://localhost:5000/api/basics/session
+content-type: application/json
+
+{
+    "_id": "642987675184523001f2db03",
+    "session_name":  "2022-2023",
+    "session_description":  "For HS Section updated",
+    "start_date": "2023-05-01",
+    "end_date": "2022-04-30",  
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+DELETE http://localhost:5000/api/basics/session
+content-type: application/json
+
+{
+    "_id": "642987675184523001f2db03"
+}

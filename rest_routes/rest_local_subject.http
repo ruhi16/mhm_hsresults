@@ -1,0 +1,55 @@
+
+
+
+
+
+
+### View Schools (GET Page) ###
+GET  http://localhost:5000/api/basics
+content-type: application/json
+
+
+### Retrive all Session Information (GET Page) ###
+GET  http://localhost:5000/api/basics/subjects
+content-type: application/json
+
+
+### Create a Session Object (POST Page) ###
+POST http://localhost:5000/api/basics/subjects
+content-type: application/json
+
+{    
+    "id": 14,
+    "subject_name": "Mathematics",
+    "subject_name_short": "MATH",
+    "subject_description": "Mathematics",
+    
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+PUT http://localhost:5000/api/basics/subjects
+content-type: application/json
+
+{
+    "_id": "6429c84ec52dc797449527bf",   
+    "id": 1,
+    "subject_name": "Computer Application",
+    "subject_name_short": "COMA",
+    "subject_description": "Modern computer application",
+    "standard": "Higher Secondary",
+    
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+DELETE http://localhost:5000/api/basics/subjects
+content-type: application/json
+
+{
+    "_id": "6429c84ec52dc797449527bf"
+}

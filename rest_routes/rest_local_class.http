@@ -1,0 +1,64 @@
+
+
+
+
+
+
+### View Schools (GET Page) ###
+GET  http://localhost:5000/api/basics
+content-type: application/json
+
+
+### Retrive all Session Information (GET Page) ###
+GET  http://localhost:5000/api/basics/classes
+content-type: application/json
+
+
+### Create a Session Object (POST Page) ###
+POST http://localhost:5000/api/basics/classes
+content-type: application/json
+
+{    
+    "id": 3,
+    "class_name_roman": "XII",    
+    "class_name_number" : "12",
+    "class_name_word" : "TWELVE",
+    
+    "class_grade" : "Secondary",
+
+    "class_sections" : [
+        "642b1e943b143a80bddbd564"
+        ],
+
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+PUT http://localhost:5000/api/basics/classes
+content-type: application/json
+
+{
+    "_id": "6429d784fdb07cb3421dee06",   
+    "id": 1,
+    "class_name_roman": "Vvvv",    
+    "class_name_number" : "5",
+    "class_name_word" : "FIVE",
+    
+    "class_grade" : "Secondary",
+
+    "class_sections" : ["6429adaa2cde0ae95b2af281", "6429adaa2cde0ae95b2af281"],
+
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+DELETE http://localhost:5000/api/basics/classes
+content-type: application/json
+
+{
+    "_id": "6429d784fdb07cb3421dee06"
+}

@@ -1,0 +1,52 @@
+
+
+
+
+
+
+### View Schools (GET Page) ###
+GET  http://localhost:5000/api/basics
+content-type: application/json
+
+
+### Retrive all Session Information (GET Page) ###
+GET  http://localhost:5000/api/basics/sections
+content-type: application/json
+
+
+### Create a Session Object (POST Page) ###
+POST http://localhost:5000/api/basics/sections
+content-type: application/json
+
+{    
+    "id": 6,
+    "section_name": "F",    
+    "section_description": "Group F",
+    
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+PUT http://localhost:5000/api/basics/sections
+content-type: application/json
+
+{
+    "_id": "6429d00a38349c5056f34f78",   
+    "id": 1,
+    "section_name": "AAAA",    
+    "section_description": "Group A",
+    
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+DELETE http://localhost:5000/api/basics/sections
+content-type: application/json
+
+{
+    "_id": "6429d00a38349c5056f34f78"
+}

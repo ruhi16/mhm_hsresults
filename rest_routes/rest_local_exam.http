@@ -1,0 +1,217 @@
+### View Schools (GET Page) ###
+GET  http://localhost:5000/api/exam
+content-type: application/json
+
+
+### View Schools (GET Page) ###
+GET  http://localhost:5000/api/exam/details
+content-type: application/json
+
+
+
+
+
+
+
+
+
+### Create a Session Object (POST Page) ###
+POST http://localhost:5000/api/exam/details
+content-type: application/json
+
+{    
+    "id": 1,
+    "sessionId": "642b16f83b143a80bddbd532",    
+    "exam_name": "Annual Examination - 2023",
+    "exam_month_year": "April, 2023",
+    
+    "exam_details": [
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1bd73b143a80bddbd539",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 80
+            },
+            {
+                "divisionNameId": "642d9f72663fce992bc6cac6",
+                "divisionMarks": 20
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1bfb3b143a80bddbd53c",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 80
+            },
+            {
+                "divisionNameId": "642d9f72663fce992bc6cac6",
+                "divisionMarks": 20
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1c0e3b143a80bddbd53f",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 80
+            },
+            {
+                "divisionNameId": "642d9f72663fce992bc6cac6",
+                "divisionMarks": 20
+            }]
+        },        
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1c223b143a80bddbd542",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 80
+            },
+            {
+                "divisionNameId": "642d9f72663fce992bc6cac6",
+                "divisionMarks": 20
+            }]
+        },               
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1c483b143a80bddbd545",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 80
+            },
+            {
+                "divisionNameId": "642d9f72663fce992bc6cac6",
+                "divisionMarks": 20
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1c673b143a80bddbd548",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 80
+            },
+            {
+                "divisionNameId": "642d9f72663fce992bc6cac6",
+                "divisionMarks": 20
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1c833b143a80bddbd54b",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 80
+            },
+            {
+                "divisionNameId": "642d9f72663fce992bc6cac6",
+                "divisionMarks": 20
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1ca33b143a80bddbd54e",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 80
+            },
+            {
+                "divisionNameId": "642d9f72663fce992bc6cac6",
+                "divisionMarks": 20
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1cc43b143a80bddbd551",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 70
+            },
+            {
+                "divisionNameId": "642d9f77663fce992bc6cac7",
+                "divisionMarks": 30
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1d0c3b143a80bddbd554",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 70
+            },
+            {
+                "divisionNameId": "642d9f77663fce992bc6cac7",
+                "divisionMarks": 30
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1d2d3b143a80bddbd557",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 70
+            },
+            {
+                "divisionNameId": "642d9f77663fce992bc6cac7",
+                "divisionMarks": 30
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1da63b143a80bddbd55a",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 70
+            },
+            {
+                "divisionNameId": "642d9f77663fce992bc6cac7",
+                "divisionMarks": 30
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1e413b143a80bddbd55d",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 70
+            },
+            {
+                "divisionNameId": "642d9f77663fce992bc6cac7",
+                "divisionMarks": 30
+            }]
+        },
+        {
+            "classId" : "642b20443b143a80bddbd58a",
+            "subjectId": "642b1e5a3b143a80bddbd560",
+            "fullmarks": 100,
+            "mark_divisions": [{
+                "divisionNameId": "642d9f13663fce992bc6cac5",
+                "divisionMarks": 70
+            },
+            {
+                "divisionNameId": "642d9f77663fce992bc6cac7",
+                "divisionMarks": 30
+            }]
+        }
+        ],
+
+
+    
+    "status": "active",
+    "remarks": "Not Applicable"
+}

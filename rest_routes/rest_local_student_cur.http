@@ -1,0 +1,70 @@
+
+
+
+
+
+
+### View Schools (GET Page) ###
+GET  http://localhost:5000/api/student
+content-type: application/json
+
+
+### Retrive all Session Information (GET Page) ###
+GET  http://localhost:5000/api/student/activesessions
+content-type: application/json
+
+
+### Create a Session Object (POST Page) ###
+POST http://localhost:5000/api/student/activesessions
+content-type: application/json
+
+{    
+    "id": 1,
+    "sessionId": "6429adaa2cde0ae95b2af281",
+    "studentAdmId": "6429adaa2cde0ae95b2af281",
+
+    
+    "classId": "6429adaa2cde0ae95b2af281",
+    "sectionId": "6429adaa2cde0ae95b2af281",
+    "rollNo": 5,
+
+
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+PUT http://localhost:5000/api/student/activesessions
+content-type: application/json
+
+{
+    "_id": "642a98c347eb991d8acaf48a",
+    "id": 15,
+    "sessionId": "6429adaa2cde0ae95b2af281",
+    "studentAdmId": "6429adaa2cde0ae95b2af281",
+
+    
+    "classId": "6429adaa2cde0ae95b2af281",
+    "sectionId": "6429adaa2cde0ae95b2af281",
+    "rollNo": 5,
+
+
+    "status": "active",
+    "remarks": "Not Applicable"
+}
+
+
+### Retrive all Financal Year Information (GET Page) ###
+DELETE http://localhost:5000/api/student/activesessions
+content-type: application/json
+
+{
+    "_id": "642a98c347eb991d8acaf48a"
+}
+
+
+
+
+
+
