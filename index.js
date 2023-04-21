@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 const createError = require('http-errors');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -14,6 +15,7 @@ app.use(express.json());
 //Log message at console
 app.use(morgan('tiny'));    //tiny, combined, dev
 
+app.use(cors());
 
 app.get('/', (req, res)=>{
     res.send({
