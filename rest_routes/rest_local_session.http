@@ -1,9 +1,5 @@
 
 
-
-
-
-
 ### Register an user (POST Page) ###
 GET  http://localhost:5000/api/basics
 content-type: application/json
@@ -15,9 +11,6 @@ content-type: application/json
 
 
 
-### Retrive all Session Information (GET Page) ###
-GET  http://localhost:5000/api/basics/session
-content-type: application/json
 
 
 ### Create a Session Object (POST Page) ###

@@ -16,7 +16,7 @@ const sessionSchema = new mongoose.Schema({
 
 
 sessionSchema.post('save', function() {
-    console.log("Session.Post('save') hook");
+    console.log("Session: POST('save') hook");
     try{
         this._id = undefined;
         this.created_at = undefined;
@@ -28,7 +28,7 @@ sessionSchema.post('save', function() {
 });
 
 sessionSchema.post('find', function() {
-    console.log("Session.Post('find') hook");
+    console.log("Session: POST('find') hook");
     try{
         this._id = undefined;
         this.created_at = undefined;

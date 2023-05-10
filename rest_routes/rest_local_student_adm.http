@@ -33,8 +33,8 @@ content-type: application/json
     "admClassId": "6429adaa2cde0ae95b2af281",
     "admSubjectIds": ["6429adaa2cde0ae95b2af281","6429adaa2cde0ae95b2af281"],
 
-    "admDate": "521",
-    "admSlNo": "2023-04-25",
+    "admDate": "2023-04-25521",
+    "admSlNo": "521",
 
     "status": "active",
     "remarks": "Not Applicable"

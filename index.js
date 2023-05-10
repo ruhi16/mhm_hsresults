@@ -59,7 +59,7 @@ app.use('/api/exam', examRoute);
 
 
 // Any root, not matched, "const createError = require('http-errors');"
-app.use((next)=>{
+app.use((next) => {
     next(createError.NotFound('Page not found!'));
 });
 

@@ -30,13 +30,24 @@ router.get('/', (req, res)=>{
 
 // ======================== Session Completed ===================================
 router.get('/session', async(req,res,next)=>{
+    console.log("Session");
     try{
-        const session = await Session.find({});
+        const session = await Session.find({})
+            .select('session_name session_description start_date end_date status remarks');
 
         if(!session){
             throw createError.Conflict(`This Session does not exists.`);
         }
 
+        // session.select('session_name');
+        // session.exec((err, session) => {
+        //     if (err) throw createError.Conflict(`This Session does not exists.`);
+        //     res.send({
+        //         status: 200,
+        //         session: session
+        //     });
+        // })
+        console.log("SEssion")
         res.send({
             status: 200,
             session: session
@@ -138,7 +149,8 @@ router.delete('/session', async(req,res,next)=>{
 // ======================== School Completed ===================================
 router.get('/schools', async(req, res, next)=>{
     try{
-        const schools = await School.find({});
+        const schools = await School.find({})
+            .select({'createdAt':0, 'updatedAt':0, '__v':0});
 
         if(!schools){
             throw createError.Conflict(`This School is expired.`);
